@@ -1,1 +1,7 @@
 config.js
+node_modules/
+server/node_modules
+math.js
+years.js
+test/
+knowledge/node_modules
