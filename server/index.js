@@ -50,6 +50,18 @@ app.get(
     onRequest
 )
 
+app.get("/data/capitals", (request,response)=>{
+
+  const anObject={
+
+    Spain:"madrid",
+    France:"Paris",
+    USA:"Washington"
+  }
+  console.log('someone requested the data')
+  response.send(anObject)
+})
+
 /*Test*/
 app.get("/test",onTest=(request,response)=>response.send(document))
 /**Hello to see the request.method */
